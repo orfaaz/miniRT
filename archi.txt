@@ -1,0 +1,15 @@
+parse args: one .rt file.
+
+read .rt file: to be valid, must contain: 1 C, 1A, 1L.
+each object has a definite amount of values, set in limited ranges.
+
+create 3d environement w/ objects and cam: If all is valid,
+store objects and values defined in the .rt to get a coherent 3d space.
+compote their relative values to the camera?
+
+display environement:
+debug: créer un z buffer
+
+Determine camera position (vtx), orientation (v). 
+determine projection plane. plane perpendicular to cam v, d away from the camera,
+of dimension HEIGHT and WIDTH.

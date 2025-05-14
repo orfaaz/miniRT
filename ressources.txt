@@ -1,0 +1,18 @@
+code it yourself vids. rasterize 3d graphics.
+https://www.youtube.com/watch?v=ih20l3pJoeU
+https://www.youtube.com/watch?v=HXSuNxpCzdM
+
+quaternions
+https://www.youtube.com/watch?v=d4EgbgTm0Bg
+https://eater.net/quaternions
+
+https://gabrielgambetta.com/computer-graphics-from-scratch/02-basic-raytracing.html
+https://www.cl.cam.ac.uk/teaching/1718/AdvGraph/1.%20Ray%20Tracing%20-%20All%20the%20Maths.pdf
+https://raytracing.github.io/books/RayTracingInOneWeekend.html#rays,asimplecamera,andbackground
+
+
+maths
+https://hugi.scene.org/online/hugi24/coding%20graphics%20chris%20dragan%20raytracing%20shapes.htm
+
+all
+https://www.youtube.com/watch?v=JN5yUrJPThI&list=PL3WoIG-PLjSt54LvzY2SuBQDl-cXa11Tm
