@@ -21,5 +21,7 @@ int	main(int ac, char **av)
 		args_num_err(ac);
 	fd = open_file(av[1]);
 	data = parser(fd);
+	data->win = set_win();
 	display_scene(data);
+	free_win(data);
 }

@@ -37,11 +37,19 @@ typedef struct s_color
 }	t_color;
 
 //ray
-typedef struct s_ray
+typedef struct s_ray//normalise rays? 
 {
 	t_vec	*orig;
 	t_vec	*dir;
 }	t_ray;
+
+//camera projection screen
+typedef struct s_proj_screen
+{
+	int	length;//depends on fov?
+	int	width;//width = WIDTH?
+	int	ratio;//WIDTH/HEIGTH
+}	t_proj_screen;//ints?
 
 //3D objects
 //camera
@@ -49,8 +57,11 @@ typedef struct s_cam
 {
 	t_vec	vtx;
 	t_vec	rot;
+	t_vec	up;//(0, 1, 0); can it be smth else?
 	int		fov;
-}	t_cam;
+	int		far_clip;
+	int		near_clip;
+}	t_cam;//needs the img? (projection grid)
 
 //ambiant light
 typedef struct s_amb
