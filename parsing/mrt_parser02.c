@@ -1,5 +1,18 @@
 #include "../minirt.h"
 
+t_viewport	*set_viewport()
+{
+	t_viewport	*viewport;
+
+	viewport = malloc((sizeof)t_viewport);
+	if (!viewport)
+		return (NULL);//exit?
+	viewport->width = WIDTH;//wrong
+	viewport->ratio = WIDTH / HEIGHT;
+	viewport->length = 1;//depend du fov
+	viewport->pxl_tab = malloc((sizeof)t_vec * ((WIDTH * HEIGHT) + 1));
+}
+
 int	set_cam(t_data *data, char *line)
 {
 	t_cam	*cam;
@@ -16,6 +29,8 @@ int	set_cam(t_data *data, char *line)
 		line++;
 	cam->vtx = set_vec(line);
 	cam->rot = set_vec(line);
+	cam->up = set_vec("0.0, 1.0, 0.0");
+	cam->viewport = set_viewport();
 	cam->fov = ft_atof(line);
 	return (0);
 }
